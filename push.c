@@ -43,9 +43,6 @@ void m_push(stack_t **stack, unsigned int line_number)
 	}
 	n = atoi(arg);
 	if (!add_node(stack, n))
-
-	node = malloc(sizeof(stack_t));
-	if (node == NULL)
 	{
 		dprintf(STDOUT_FILENO, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
