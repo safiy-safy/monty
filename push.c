@@ -49,3 +49,4 @@ void m_push(stack_t **stack, unsigned int line_number)
 	}
 	var.stack_len++;
 }
+

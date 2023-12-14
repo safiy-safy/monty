@@ -10,6 +10,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <ctype.h>
+#include <stdbool.h>
 
 /**
  * struct var_s - struct to contain the main variables of the Monty interpreter
@@ -80,6 +82,7 @@ void m_pstr(stack_t **stack, unsigned int line_number);
 void free_stack(int status, void *arg);
 void m_fs_close(int status, void *arg);
 void free_lineptr(int status, void *arg);
+void addnode(stack_t **head, int n);
 stack_t *add_node(stack_t **stack, const int n);
 
 #endif /* _MONTY_H_ */
